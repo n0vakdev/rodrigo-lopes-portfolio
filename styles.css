@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'novak';
+    src: url('CodeSaver-Regular.otf') format('opentype');
+    /* Define a fonte personalizada "novak" para uso no site */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.7;
+    background-image: url(imagens/backgroundimg3.jpg);
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+header {
+    background: #C9E4FF;
+    color: #e9e9e9;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #161616;
+    text-decoration: none;
+    font-weight: bold;
+        /* Exibe os itens de menu na horizontal */
+}
+nav ul li a:hover {
+    box-shadow: 0 8px 15px rgba(117, 117, 117, 0.2);
+    transform: translateY(-4px);
+    background-color: #C9E4FF; /* Opcional: muda a cor de fundo ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    /* Adiciona espaçamento e centraliza o texto */
+}
+
+main section {
+    margin: 50px 0;
+}
+
+.texto {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dev {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.titulo {
+    font-size: 45px;
+    font-weight: bold;
+}
+.idid{
+    max-width: 15%;
+    display: center
+    
+}
+.index {
+    font-weight: bold;
+    font-family: 'novak';
+    margin: auto;
+    height: auto; 
+    max-width: 77%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 30px;
+    margin-top: 1%;
+    margin-left: center;
+    /* Estiliza o container principal com fundo semi-transparente e bordas arredondadas */
+}
+
+.portfolio{
+    font-weight: bold;
+    font-family: 'novak';
+    background-color: rgba(255, 255, 255, 0.4);
+    max-width: 77%;
+    border-radius: 10px;
+    margin: auto;
+    height: auto;
+    border: 1px solid black;
+    padding: 30px;
+    margin-top: 1%;
+    margin-left: center;
+    text-align: left;
+
+}
+.projetotitulo{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.primeiroprojeto {
+    max-width: 100%;
+}
+
+.projetosubtitulo {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.projetotexto {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.form-container {
+    padding: 3px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 40%;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+.form-group button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-group button:hover {
+    background-color: #0056b3;
+}
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* responsividade em telas menores */
+@media (max-width: 1024px) {
+    .titulo {
+        font-size: 36px;
+    }
+
+    .dev {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto {
+        font-size: 18px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .dev {
+        font-size: 18px;
+    }
+
+    .index, .portfolio {
+        max-width: 90%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .rodrigofoto img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto {
+        font-size: 16px;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .dev {
+        font-size: 16px;
+    }
+
+    .index, .portfolio {
+        max-width: 95%;
+    }
+}
